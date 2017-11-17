@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:controls="clr-namespace:MySurveyApp.Controls"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="MySurveyApp.SurveyPage">
+	<StackLayout Margin="10,20">
+		<Label HorizontalOptions="Center"
+			Text="Xamarin User Survey"
+			VerticalOptions="Center"/>
+		<controls:FormEntry Text="{Binding FirstName}"
+			Title="First Name:"/>
+		<controls:FormEntry Text="{Binding LastName}"
+			Title="Last Name:"/>
+		<controls:FormEntry Text="{Binding Company}"
+			Title="Company:"/>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,10 @@
+﻿private $type$ _$name$ = $value$;
+public $type$ $name$
+{
+    get => _$name$;
+    set
+    {
+        _$name$ = value;
+        NotifyPropertyChanged();
+    }
+}
